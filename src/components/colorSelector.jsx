@@ -10,7 +10,10 @@ function ColorSelector() {
 
     return (
         <>
-        <div>
+        <header>
+            <h1>Sticky Notes App</h1>
+        </header>
+        <div className="note-input">
             <label htmlFor="colorPicker">Select Note Color: </label>
             <input
                 type="color"

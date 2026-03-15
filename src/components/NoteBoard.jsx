@@ -15,6 +15,7 @@ function NoteBoard() {
     };
 
     return (
+        <body>
         <div className="note-board">
             <div className="note-input">
                 <input text="text" value={noteText} onChange={(e) => setNoteText(e.target.value)} placeholder="Write a note..." />
@@ -28,6 +29,7 @@ function NoteBoard() {
                        )}
             </div>
         </div>
+        </body>
     );
 }
 

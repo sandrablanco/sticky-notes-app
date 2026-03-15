@@ -2,7 +2,7 @@ import useNotes from "../hook/useNotes";
 function Note({ note, deleteNote }) {
 
   return (
-    <div
+    <div className= "note"
       style={{
         backgroundColor: note.color,
         padding: "10px",
