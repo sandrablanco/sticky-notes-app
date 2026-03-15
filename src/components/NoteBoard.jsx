@@ -21,9 +21,11 @@ function NoteBoard() {
                 <button onClick={handleAddNote}>Add Note</button>
             </div>
             <div className="notes-container">
-                {notes.map((note) => (
-                    <Note key={note.id} note={note} deleteNote={deleteNote} />
-                ))}
+                  {notes.length === 0 ? ( <p>No notes yet</p>) : ( //si no hay notas, muestro un mensaje, sino muestro las notas
+                   notes.map((note) => (
+                       <Note key={note.id} note={note} deleteNote={deleteNote} />
+                          ))
+                       )}
             </div>
         </div>
     );
