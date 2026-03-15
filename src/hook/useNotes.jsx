@@ -1,6 +1,6 @@
 import {useState} from 'react';
 const useNotes = () => {
-    const [notes, setNotes] = ([null]);
+    const [notes, setNotes] = useState([]);
     const addNote = (text, color) => {
         const id = Date.now();
         const note = {

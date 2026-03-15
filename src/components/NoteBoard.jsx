@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
-import useNotes from "../hooks/useNotes";
-import { ColorContext } from "../context/ColorContext";
+import useNotes from "../hook/useNotes";
+import { ColorContext} from "../context/ColorContext";
 import Note from "./Note";
 
 function NoteBoard() {

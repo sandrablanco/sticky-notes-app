@@ -1,11 +1,11 @@
 import { ColorProvider } from "./context/ColorContext";
 import NoteBoard from "./components/NoteBoard";
-import colorSelector from "./components/ColorSelector";
+import ColorSelector from "./components/ColorSelector";
 
 function App() {
   return (
     <ColorProvider>
-      <colorSelector />
+      <ColorSelector />
       <NoteBoard />
     </ColorProvider>
   );
