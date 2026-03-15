@@ -12,12 +12,13 @@ const useNotes = () => {
         const savedNotes = localStorage.getItem("notes"); //useEffect para el localStorage que me guarde las notas
         return savedNotes ? JSON.parse(savedNotes) : [];
     });
-    const addNote = (text) => {
+    const addNote = (text, color) => {
+        let noteColor = color && colors[Math.floor(Math.random() * colors.length)]; //si no se pasa un color, asigno uno aleatorio
         const id = Date.now();
         const newNote = {
             id: id,
             text: text,
-            color: colors[Math.floor(Math.random() * colors.length)] //asigno un color aleatorio a cada nota
+            color: noteColor //asigno el color especificado o un color aleatorio a cada nota
         };
 
         const newNotes = [...notes, newNote];
